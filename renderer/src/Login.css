@@ -1,0 +1,162 @@
+/* Full Page Layout */
+.login-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #0056b3;
+}
+
+/* Left Section - Login Form */
+.login-section {
+    width: 60%; /* Half the screen for the form */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+/* Login Form Container */
+.login-form-container {
+    width: 100%; /* Full width inside the section */
+    max-width: 600px; /* Limit the form width */
+    padding: 40px 50px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Login Title and Subtitle */
+.login-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-label {
+    display: block;
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.input-field {
+    width: 100%;
+    padding: 14px 14px 14px 44px; /* Adjusted for icon spacing */
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-size: 1rem;
+    color: #333333;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    cursor: text; /* Ensures text cursor for input fields */
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    background: #ffffff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Forgot Password */
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #e74c3c; /* Red color */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    color: #c0392b;
+}
+
+/* Right Section - Image */
+.image-section {
+    width: 40%; /* Half the screen for the image */
+    background: #f0f0f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-section img {
+    max-width: 80%; /* Adjust image size */
+    height: auto;
+    border-radius: 12px;
+}
+
+
+.input-group{
+    position: relative;
+    left: -3%;
+ }

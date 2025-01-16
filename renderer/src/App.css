@@ -1,0 +1,206 @@
+/* Reset margins and padding for body, html, and root */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Fullscreen Background */
+.background-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./assets/pktree.webp') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    animation: backgroundFadeIn 2s ease-in-out; /* Background animation */
+}
+
+/* Fade-in animation for background */
+@keyframes backgroundFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Glassmorphic Overlay */
+.content-overlay {
+    background: rgba(255, 255, 255, 0.3); /* Transparent White */
+    backdrop-filter: blur(15px); /* Frosted Glass Effect */
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: scaleUp 1s ease-out; /* Scale-in animation for overlay */
+}
+
+/* Scale-in animation for the glass overlay */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInText 1.5s ease-out forwards 0.5s; /* Delayed fade-in */
+}
+
+/* Subtext */
+.subtext {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeInText 1.5s ease-out forwards 0.7s; /* Slight delay */
+}
+
+/* Fade-in animation for text */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Explore Button */
+.explore-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ffffff; /* Ensure text color is always visible */
+    background: rgba(255, 105, 180, 0.6); /* Semi-transparent pink */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: none; /* Disable hover animation by default */
+}
+
+/* Hover Effects */
+.explore-button:hover {
+    background: rgba(255, 105, 180, 0.8); /* Darker pink on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Pulse Effect (Optional for Hover) */
+@keyframes pulse {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+/* Button pulse animation */
+.explore-button:hover {
+    animation: pulse 0.6s infinite alternate ease-in-out;
+}
+
+
+/* Login Page Text */
+.login-text {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* White border */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    color: #ffffff; /* Text color */
+    font-size: 1rem;
+    outline: none; /* Remove default browser outline */
+    caret-color: #ffffff; /* White cursor */
+}
+
+/* Placeholder Text */
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Brighten the placeholder text */
+    font-style: italic; /* Optional: Make the placeholder text italic */
+}
+
+/* Input Field on Focus */
+.input-field:focus {
+    background: rgba(255, 255, 255, 0.3); /* Slightly brighter background */
+    border-color: rgba(255, 255, 255, 0.8); /* Brighter border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+
+/* Login Button */
+.login-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: rgba(255, 105, 180, 0.6);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover {
+    background: rgba(255, 105, 180, 0.8);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Back Button */
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: rgba(70, 130, 180, 0.6); /* Soft blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background: rgba(70, 130, 180, 0.8); /* Slightly darker blue on hover */
+    transform: scale(1.05); /* Slight enlarge effect */
+}
