@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Login from './Login';
+import Dashboard from './Dashboard';
 
 function App() {
     return (
@@ -25,6 +26,9 @@ function App() {
 
                 {/* Login Page */}
                 <Route path="/login" element={<Login />} />
+
+                {/* Dashboard Page */}
+                <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
         </Router>
     );

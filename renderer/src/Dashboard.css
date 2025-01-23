@@ -1,0 +1,82 @@
+/* Layout Styles */
+.dashboard-layout {
+    min-height: 100vh;
+}
+
+.site-layout {
+    background: #f0f2f5;
+}
+
+.site-layout-header {
+    background: #001529;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.header-title {
+    margin: 0 auto; /* Center the title */
+}
+
+.header-icons button {
+    margin-left: 10px;
+}
+
+.logout-button {
+    margin-left: 20px;
+}
+
+/* Content Area */
+.site-layout-content {
+    margin: 24px 16px;
+    padding: 24px;
+    background: #fff;
+    box-shadow: 6px 5px 12px 10px #00000026;
+    border-radius: 8px;
+}
+
+/* Logo */
+.logo {
+    height: 32px;
+    margin: 16px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+/* Card Styles */
+.dashboard-card {
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+.site-layout-footer {
+    /* text-align: center;
+   
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    font-size: 14px; */
+
+    text-align: center;
+    background: #ffffff;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid #ddd;
+}
